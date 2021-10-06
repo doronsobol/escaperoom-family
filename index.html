@@ -9,7 +9,7 @@
 	<head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>Indus HTML5 Free Responsive Template | Template stock</title>
+        <title>Escape The Family</title>
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/et-lineicon.css" />
@@ -38,55 +38,64 @@
 			<div class="content">
                 <div id="large-header" class="large-header">
                     <canvas id="demo-canvas"></canvas>
+                    <form id='password'>
                     <div id="countdown_dashboard" class="home-main container">
                         <div class="row">
                             <div class="logo">
-                                <img src="images/logo.png" alt="logo">
-                                <p>Lorem Ipsum is simply dummy text</p>
+                                <h1 id='request_code'>Please enter the correct code</h1>
                             </div>
                         </div>
                         <div class="row">
                             <!-- DAYS -->
                             <div class="col-md-3 col-sm-3 col-xs-6 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                                 <div class="dash days_dash">
-                                    <div class="digit">0</div>
-                                    <div class="digit">0</div>
-                                    <span class="dash_title">Days</span>
+
+                                    <img src="images/cup.png" alt="Cup" width="150" height="150">
+                                    <br>
+                                    <input style="height:80px;font-size:30pt;" type="number" id="cup" name="cup" min="1" max="12">
+<!--                                     <div class="digit">0</div>
+                                    <div class="digit">0</div> -->
                                 </div>
                             </div>
                             <!-- HOURS -->
                             <div class="col-md-3 col-sm-3 col-xs-6 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                                 <div class="dash hours_dash">
-                                    <div class="digit">0</div>
-                                    <div class="digit">0</div>
-                                    <span class="dash_title">Hours</span>
+                                    <img src="images/closet.jpg" alt="Closet" width="150" height="150">
+                                    <br>
+                                    <input style="height:80px;font-size:30pt;" type="number" id="closet" name="closet" min="1" max="12">
+<!--                                     <div class="digit">0</div>
+                                    <div class="digit">0</div> -->
                                 </div>
                             </div>
                             <!-- MINUTES -->
                             <div class="col-md-3 col-sm-3 col-xs-6 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                                 <div class="dash minutes_dash">
-                                    <div class="digit">0</div>
-                                    <div class="digit">0</div>
-                                    <span class="dash_title">Minutes</span>
+                                    <input style="height:80px;font-size:30pt;" type="number" id="table" name="table" min="1" max="12">
+<!--                                     <div class="digit">0</div>
+                                    <div class="digit">0</div> -->
+                                    <span class="dash_title">Table</span>
                                 </div>
                             </div>
                             <!-- SECONDS -->
                             <div class="col-md-3 col-sm-3 col-xs-6 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                                 <div class="dash seconds_dash">
-                                    <div class="digit">0</div>
-                                    <div class="digit">0</div>
-                                    <span class="dash_title">Seconds</span>
+                                    <input style="height:80px;font-size:30pt;" type="number" id="bed" name="bed" min="1" max="12">
+<!--                                     <div class="digit">0</div>
+                                    <div class="digit">0</div> -->
+                                    <span class="dash_title">Bed</span>
                                 </div>
                             </div>
                         </div> <!-- END ROW -->
+                        <input type="submit" value="Submit">
                     </div> <!-- END COUNTDOWN -->
+                    </form>
                 </div> <!-- LARGE HEADER -->
             </div> <!-- END CONTENT -->
         </section>
 
         <!-- =========================
                  NEWSLETTER
-        ========================== -->
+        
 
         <section class="newsletter">
             <div class="container">
@@ -102,17 +111,20 @@
                                     <span class="input-group-btn">
                                         <button class="btn btn-custom news-btn" id="" name="subscribe_btn"><span>Subscribe</span></button>
                                     </span>
-                                </div><!-- /input-group -->
-                            </form><!-- END FORM -->
+                                </div>  /input-group 
+                            </form>  END FORM 
                         </div>  
                     </div>
                 </div>
             </div>
         </section>
 
+        
+        ========================== -->
+
+
         <!-- =========================
                  FEATURES
-        ========================== -->
 
         <section class="features parallax" data-stellar-background-ratio="0.7" id="features">
             <div class="container">
@@ -140,11 +152,13 @@
                     </div>
                 </div>
             </div>
-        </section>    
+        </section>  
+
+
+        ========================== -->  
 
         <!-- =========================
                  CONTACT
-        ========================== -->
 
         <section id="contact" class="contact">
             <div class="container">
@@ -153,38 +167,39 @@
                         <h4>Get In Touch</h4>
                         <div class="line-separate line-white text-center"><span></span></div>
                         <p>7-Indus House, Area name,city name -1230009</p>
-                    </div> <!-- end Our Location -->
-                </div> <!-- end row -->
-                <!-- CONTACT FORM -->
+                    </div>  end Our Location 
+                </div>  end row 
+                 CONTACT FORM 
                 <div id="cformSuccessMsg" style="display: none;" class="confirm-message"></div>
                 <form id="" name="contactForm" method="POST" >
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
                             <input class="" type="text" name="contact_name" id="contact_name" placeholder="Name" />
-                        </div> <!-- end Name -->
+                        </div> 
                         <div class="col-lg-4 col-md-4">
                             <input class="" type="text" name="contact_email" id="contact_email" placeholder="Email" />
-                        </div> <!-- end Email -->
+                        </div> 
                     </div>
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-lg-offet-2 col-md-offset-2">
                             <textarea name="contact_message" id="contact_message" placeholder="Message"></textarea>
                         </div>
-                    </div> <!-- end Message -->
+                    </div> 
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="text-right">
                                 <button class="btn btn-custom" id="contact_submit_btn" name="contact_submit_btn"><span>Send Message</span></button>
                             </div>
                         </div>
-                    </div> <!-- end button -->
-                </form><!-- END FORM -->
-            </div> <!-- end container -->
-        </section> <!-- end Contact -->
+                    </div> 
+                </form>
+            </div> 
+        </section> 
 
+
+        ========================== -->
         <!-- =========================
                  FOOTER
-        ========================== -->
 
         <footer class="footer">
             <div class="container text-center">
@@ -205,7 +220,22 @@
             </div>
         </footer>
             
+        ========================== -->
         <!-- JAVASCRIPTS -->
+        <script>
+            const form  = document.getElementById('password');
+
+            form.addEventListener('submit', (event) => {
+                // handle the form data
+                req_c = document.getElementById('request_code');
+                if (6 == form.elements['cup'].value) {
+                    req_c.innerHTML = 'Correct'
+                } else {
+                    req_c.innerHTML = 'The code was incorrect<br>Please enter the correct code'
+                }
+                event.preventDefault();
+            });
+        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.lwtCountdown-1.0.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
