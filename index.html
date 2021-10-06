@@ -42,10 +42,10 @@
                     <div id="countdown_dashboard" class="home-main container">
                         <div class="row">
                             <div class="logo">
-                                <h1 id='request_code'>Please enter the correct code</h1>
+                                <h1 id='request_code' style="color: red;">Please enter the correct code</h1>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" id="toDelete">
                             <!-- DAYS -->
                             <div class="col-md-3 col-sm-3 col-xs-6 dash-glob" data-scroll-reveal="enter bottom move 25px, after 0.3s">
                                 <div class="dash days_dash">
@@ -234,13 +234,19 @@
 
             form.addEventListener('submit', (event) => {
                 // handle the form data
+
+                event.preventDefault();
                 req_c = document.getElementById('request_code');
-                if (6 == form.elements['cup'].value) {
-                    req_c.innerHTML = 'Correct'
+                if (12 == form.elements['cup'].value && 2 == form.elements['closet'].value && 4 == form.elements['table'].value &&  11 == form.elements['bed'].value)   //Ayala -  Doron -  Ofir &Sapir   -    Ori
+                {
+                    // sol_c = document.getElementById('demo-canvas')
+                    req_c.innerHTML = '!או אה מה קרה <br><img src="images/solution.png" alt="Cheska"  width="40%" height="40%">'
+                    // req_c.innerHTML = ''
+                    const rest  = document.getElementById("toDelete");
+                    rest.innerHTML = "";
                 } else {
                     req_c.innerHTML = 'The code was incorrect<br>Please enter the correct code'
                 }
-                event.preventDefault();
             });
         </script>
         <script src="js/jquery.min.js"></script>
